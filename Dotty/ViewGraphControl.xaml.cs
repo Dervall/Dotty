@@ -50,9 +50,16 @@ namespace Dotty
                 if (activeDocument != null)
                 {
                     var selection = (TextSelection) activeDocument.Selection;
+                    var textDocument = selection.Parent;
+
+                    var editPoint = textDocument.CreateEditPoint(textDocument.StartPoint);
+                    var text = editPoint.GetText(textDocument.EndPoint);
+                    
+                    // Try to find the graph that the cursor might be in.
+                    
+
                     LoadGraphImage(selection.Text);
                 }
-              //  LoadGraphImage("digraph { a -> b }");
             }
         }
 
