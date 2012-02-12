@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Dotty</name>
+    </assembly>
+    <members>
+        <member name="T:Dotty.ViewGraphControl">
+            <summary>
+            ViewGraphControl
+            </summary>
+        </member>
+        <member name="M:Dotty.ViewGraphControl.InitializeComponent">
+            <summary>
+            InitializeComponent
+            </summary>
+        </member>
+    </members>
+</doc>
